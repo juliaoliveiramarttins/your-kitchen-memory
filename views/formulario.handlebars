@@ -1,0 +1,27 @@
+<form action="/add" method="POST" class="adcreceita">
+  <!-- Imagem do caderno -->
+  <img class="caderno" src="/imagens/caderninho.png" alt="">
+
+  <!-- Caixa transparente para o formulário -->
+  <div class="caixa-transparente">
+    <!-- Título do formulário -->
+    <h1 class="titulo">Receita</h1>
+
+    <!-- Campos do formulário -->
+    <p class="paragform">Nome:</p>
+    <input class="caixa" name="titulo" type="text">
+
+    <p class="paragform">Ingredientes:</p>
+    <textarea class="caixa2" name="conteudo"></textarea>
+
+    <p class="paragform">Modo de Preparo:</p>
+    <textarea class="caixa2" name="preparo"></textarea>
+
+    <!-- Botões de ação -->
+    <div class="button-container">
+      <a href="/" class="btvoltar">Voltar</a>
+      <input class="btenviar" type="submit" value="Salvar Receita">
+    </div>
+  </div>
+</form>
+

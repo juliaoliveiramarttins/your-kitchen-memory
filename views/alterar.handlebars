@@ -1,0 +1,15 @@
+<div class="update-form-container">
+  <form action="/update" method="POST" class="update-form">
+    {{#each posts}}
+      <input type="hidden" name="id" value="{{id}}">
+      <p>Nome:</p>
+      <input type="text" name="titulo" value="{{titulo}}">
+      <p>Conteúdo:</p>
+      <textarea name="conteudo">{{conteudo}}</textarea>
+      <p>Modo de preparo:</p>
+      <textarea name="preparo">{{preparo}}</textarea>
+      <input type="submit" value="Alterar">
+      <hr>
+    {{/each}}
+  </form>
+</div>

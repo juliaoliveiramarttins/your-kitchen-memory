@@ -1,0 +1,39 @@
+.desc{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6ddcc;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logodesc{
+    margin-top: 65px;
+    width: 230px;
+}
+
+.pdesc{
+    font-size: 27px;
+    text-align: center;
+    margin-top: 70px;
+    align-items: center;
+    color: #563f29;
+    
+}
+
+.btdesc{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #ffffff;
+    background-color: #eb8ea3;
+    color:white;
+    font-size: 25px;
+
+    
+}
+.btdesc:hover {
+    background-color: #b5596f; /* Cor de fundo do botão ao passar o mouse */
+}

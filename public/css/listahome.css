@@ -1,0 +1,92 @@
+/* Estilo para o contêiner principal de receitas */
+ .receitas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+/* Estilo do título das receitas */
+.listahome-titulo {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  color: #a67f5a; /* Cor do título */
+  margin: 40px 0 20px; /* Espaçamento superior, inferior e lateral */
+  text-align: center; /* Centraliza o título */
+}
+
+
+.container-posts{
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Estilo para cada post individual */
+.post {
+ background-color: rgba(255, 255, 255, 0.9); 
+ border-radius: 10px;
+ padding: 20px;
+ width: 100%;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+ margin-bottom: 20px; 
+ box-sizing: border-box; 
+} 
+
+.post h2 {
+  font-size: 1.8rem; /* Tamanho da fonte do subtítulo */
+  color: #a67f5a; /* Cor do título */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo dos parágrafos dentro dos posts */
+.post p {
+  font-size: 1.1rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo dos links dentro de cada post */
+.post a {
+  font-size: 1rem; /* Tamanho da fonte dos links */
+  color: #e57373; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado */
+  margin-right: 10px; /* Espaçamento entre os links */
+  transition: color 0.2s; /* Suaviza a mudança de cor */
+}
+
+/* Efeito hover nos links */
+.post a:hover {
+  color: #c44536; /* Cor dos links ao passar o mouse */
+}
+
+
+/* Estilo da barra de pesquisa */
+.search-container {
+  display: flex; /* Usa flexbox para alinhar horizontalmente */
+  justify-content: center; /* Centraliza o conteúdo dentro do contêiner */
+  margin-bottom: 20px;
+  gap: 10px; /* Espaçamento entre o campo de entrada e o botão */
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e57373;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s; /* Suaviza a mudança de cor */
+}
+
+.search-container button:hover {
+  background-color: #c44536;
+}

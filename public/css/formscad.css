@@ -1,0 +1,133 @@
+/* Remove margens e padding padrão de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+html, body {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #f6ddcc; /* Cor de fundo padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do contêiner do formulário */
+.adcreceita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f6ddcc; /* Cor de fundo do contêiner */
+  width: 600px;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative; /* Permite o posicionamento absoluto dos botões */
+}
+
+/* Estilo do contêiner da caixa transparente */
+.caixa-transparente {
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Permite o posicionamento dos botões */
+  height: 600px;
+  padding-top: 110px;
+}
+
+/* Estilo da imagem do caderno */
+.caderno {
+  position: fixed; /* Fixa a imagem no topo da página */
+  top: 20px; /* Espaçamento do topo da tela */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar a imagem */
+  width: 140px; /* Largura da imagem */
+  z-index: 1000; /* Garante que a imagem fique sobre outros elementos */
+}
+
+/* Estilo do título */
+.titulo {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  color: #a67f5a; /* Cor do título */
+  margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+/* Estilo dos parágrafos do formulário */
+.paragform {
+  font-size: 1.1rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  align-self: flex-start; /* Alinha o parágrafo ao início do contêiner */
+}
+
+/* Estilo dos inputs de texto */
+.caixa {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Espaçamento inferior */
+  border: 1px solid #a67f5a; /* Borda do input */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo das caixas de texto (textarea) */
+.caixa2 {
+  width: 100%;
+  height: 100px; /* Altura padrão das caixas de texto */
+  padding: 10px;
+  margin-bottom: 20px; /* Espaçamento inferior */
+  border: 1px solid #a67f5a; /* Borda da caixa de texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilo dos botões */
+.btvoltar,
+.btenviar {
+  padding: 10px 20px; /* Tamanho dos botões */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+  border-radius: 20px; /* Bordas arredondadas */
+  color: #ffffff; /* Cor do texto do botão */
+  text-align: center; /* Alinha o texto ao centro */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: background-color 0.2s; /* Suaviza a mudança de cor */
+}
+
+/* Botão "Voltar" */
+.btvoltar {
+  background-color: #f4a261; /* Cor de fundo do botão "Voltar" */
+}
+
+/* Botão "Salvar Receita" */
+.btenviar {
+  background-color: #e57373; /* Cor de fundo do botão "Salvar Receita" */
+  border: none; /* Remove a borda padrão */
+}
+
+/* Efeito hover nos botões */
+.btvoltar:hover,
+.btenviar:hover {
+  background-color: #c44536; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do contêiner de botões */
+.button-container {
+  display: flex; /* Exibe os botões lado a lado */
+  gap: 12px; /* Espaçamento entre os botões */
+  margin-top: 10px; /* Espaçamento superior dos botões */
+  justify-content: space-between; /* Alinha os botões horizontalmente */
+  width: 100%;
+}

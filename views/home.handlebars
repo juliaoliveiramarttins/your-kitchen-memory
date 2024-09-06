@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas</title>
+  <style>
+    .post {
+      margin-bottom: 20px;
+    }
+    .search-container {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="receitas-container">
+    <h1 class="listahome-titulo">Receitas</h1>
+    
+    <!-- Barra de pesquisa -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar receita...">
+      <button onclick="filtrarReceitas()">Buscar</button>
+    </div>
+    
+    <div class="container-posts">
+      {{#each posts}}
+      <div class="post" data-titulo="{{titulo}}">
+        <h2>Nome: {{titulo}}</h2>
+        <p>Ingredientes: {{conteudo}}</p>
+        <p>Modo de preparo: {{preparo}}</p>
+        <p style="display: none;">Data: {{createdAt}}</p>
+        <div>
+          <a href="/deletar/{{id}}"><img src="/imagens/deleteicon.svg" title="Excluir Receita"></a>
+          <a href="/alterar/{{id}}"><img src="/imagens/editicon.svg" title="Editar Receita"></a>
+         
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <!-- Script JavaScript -->
+  <script>
+    function filtrarReceitas() {
+      // Obtém o valor da barra de pesquisa
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      
+      // Obtém todos os elementos de post
+      const posts = document.querySelectorAll('.post');
+      
+      posts.forEach(post => {
+        // Obtém o nome do título do post
+        const titulo = post.getAttribute('data-titulo').toLowerCase();
+        
+        // Verifica se o título contém o valor da barra de pesquisa
+        if (titulo.includes(searchInput)) {
+          post.style.display = ''; // Exibe o post se corresponder
+        } else {
+          post.style.display = 'none'; // Oculta o post se não corresponder
+        }
+      });
+    }
+  </script>
+</body>
+</html>
